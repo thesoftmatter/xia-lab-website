@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Xia Lab</title>
+<meta name="description" content="Xia Lab academic research website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo" href="index.html" aria-label="Xia Lab home">
+      <span class="logo-mark">X</span>
+      <span class="logo-text">Xia Lab<span>Mechanobiology + Soft Matter</span></span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="people.html">People</a></li><li><a href="publications.html">Publications</a></li><li><a href="news.html">News</a></li><li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu" onclick="toggleMenu()">Menu</button>
+  </div>
+</header>
+<main id="main" class="page-main"><div class="page-hero"><div class="container"><p class="kicker">Contact</p><h1>Interested in joining or collaborating?</h1><p>We welcome inquiries from students, postdoctoral researchers, and collaborators interested in soft matter physics, mechanobiology, biomaterials, and nuclear organization.</p></div></div><section><div class="container contact-panel">
+      <div>
+        <p class="kicker">Contact</p>
+        <h2>Interested in joining or collaborating?</h2>
+        <p>We welcome inquiries from students, postdoctoral researchers, and collaborators interested in soft matter physics, mechanobiology, biomaterials, and nuclear organization.</p>
+        <div class="contact-info">
+          <div class="contact-item"><strong>Email</strong><a href="mailto:jingxia@princeton.edu">jingxia@princeton.edu</a></div>
+          <div class="contact-item"><strong>Location</strong><span>Department information coming soon</span></div>
+          <div class="contact-item"><strong>For applicants</strong><span>Please include a brief research interest statement and CV.</span></div>
+        </div>
+      </div>
+      <form class="form" onsubmit="sendMail(event)">
+        <input id="name" type="text" placeholder="Your name" required>
+        <input id="email" type="email" placeholder="Your email" required>
+        <input id="subject" type="text" placeholder="Subject" required>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button class="btn btn-primary" type="submit">Open email draft →</button>
+      </form>
+    </div></section></main><footer>
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Xia Lab. All rights reserved.</p>
+    <p>Built for GitHub Pages · Multi-page academic site</p>
+  </div>
+</footer><script src="assets/script.js"></script></body></html>
